@@ -311,7 +311,7 @@
   .about-text p:first-child { font-size: 21px; color: var(--text); }
   .facts-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 8px 24px; }
   .facts-card div {
-    position: relative; display: grid; grid-template-columns: 120px 1fr; gap: 12px; padding: 14px 0;
+    position: relative; display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; padding: 14px 0;
     border-bottom: 1px solid var(--line); font-size: 15px; transition: padding-left .35s var(--ease);
   }
   .facts-card div::before {
@@ -323,7 +323,7 @@
   .facts-card div:last-child { border-bottom: 0; }
   .facts-card dt { color: var(--muted); transition: color .3s; }
   .facts-card div:hover dt { color: var(--grass); }
-  .facts-card dd { margin: 0; font-weight: 500; }
+  .facts-card dd { margin: 0; font-weight: 500; min-width: 0; overflow-wrap: anywhere; }
   .facts-card dd a { color: var(--grass); text-decoration: none; }
   .facts-card dd a:hover { text-decoration: underline; }
   @media (max-width: 900px) { .about { grid-template-columns: 1fr; } }
@@ -501,7 +501,7 @@
         <div><dt>Studio</dt><dd>Devan Studio</dd></div>
         <div><dt>Main tool</dt><dd>Blender (EEVEE &amp; Cycles)</dd></div>
         <div><dt>Also use</dt><dd>MCprep, DaVinci Resolve</dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:orangedonutzz@gmail.com">orangedonutzz@gmail.com</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:orangedonutzz@gmail.com">orangedonutzz@<wbr>gmail.com</a></dd></div>
       </dl>
     </div>
   </div>
